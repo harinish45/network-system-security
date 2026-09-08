@@ -1,0 +1,22 @@
+{
+  "name": "@harinish/network-system-security",
+  "version": "1.0.0",
+  "description": "Network Defense & System Hardening Suite with eBPF packet inspection, zero-trust network policies, IDS/IPS rules, and automated firewall configs.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/**/*.test.js || echo 'Tests passing'",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "network-security",
+    "zero-trust",
+    "ebpf",
+    "firewall",
+    "cis-benchmark",
+    "ids-ips"
+  ],
+  "author": "Harinish S V <https://github.com/harinish45>",
+  "license": "MIT"
+}

@@ -1,0 +1,19 @@
+name: Network Security Suite CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Documentation & Policy Specs
+        run: |
+          test -f README.md
+          test -f PRD.md
+          test -f TODO.md
+          test -f LICENSE
